@@ -1,57 +1,191 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaraCara</title>
-    <link rel="stylesheet" href="./main.css"
-</head>
-<body>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PRODUCTS</li>
-                <li>CONTACT</li>
-            </ul>
-            <a href="./index.html">Cara <img src="./assets/UX-HTML-CSS/icons8-pottery-96.png" alt="Image of vase logo."> Cara</a>
-            <form id="form" role="search">
-                <input type="search" id="query" name="q"
-                 placeholder=""
-                 aria-label="Search through site content">
-                 <button>Search</button>
-            </form>
-        </nav>
+      <nav class="header_container">
+        <div class="header_section">
+          <ul>
+            <li>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li>ABOUT</li>
+            <li>PRODUCTS</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <div class="header_section">
+          <a href="./index.html" class="logo">
+            <span>Cara</span>
+            <img
+              src="./assets/UX-HTML-CSS/icons8-pottery-96.png"
+              alt="Image of vase logo."
+            />
+            <span>Cara</span>
+          </a>
+        </div>
+        <div class="header_section">
+          <form id="form" role="search">
+            <input
+              class="search_bar"
+              type="search"
+              id="query"
+              name="q"
+              placeholder=""
+              aria-label="Search through site content"
+            />
+            <span class="cart">CART (0)</span>
+          </form>
+        </div>
+      </nav>
     </header>
-    <section class="MainImage">
-        <img src="./assets/UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg"
-        alt="Image of hands sculpting a clay pot.">
-    </section>
-    <section class="AboutUs">
-        <h2>About Us</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Nisl tincidunt eget nullam non. Habitant morbi tristique senectus et netus et malesuada. 
-            Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.
-        </p>
-        <p>
-            Ornare quam viverra orci sagittis. Eu augue ut lectus arcu bibendum at varius vel. Eget mi proin sed libero enim. 
-            Quam viverra orci sagittis eu volutpat odio facilisis. Amet nulla facilisi morbi tempus iaculis urna id. Sit amet 
-            tellus cras adipiscing enim. Adipiscing tristique risus nec feugiat in.
-        </p>
-        <p>
-            Dui vivamus arcu felis bibendum ut tristique. Ornare arcu dui vivamus 
-            arcu felis bibendum ut tristique et. Gravida rutrum quisque non tellus orci ac auctor augue. Mauris ultrices eros 
-            in cursus. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis.
-        </p>
-    </section>
-    <section class="OurProducts">
-        ><h2>Our Products</h2>
-        <p>
-
-        </p>
-    </section>
-</body>
+    <main class="main_content">
+      <section class="MainImage">
+        <img
+          src="./assets/UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg"
+          alt="Image of hands sculpting a clay pot."
+          height="100%"
+          width="100%"
+        />
+      </section>
+      <section class="AboutUs">
+        <div class="about_content">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
+            tincidunt eget nullam non. Habitant morbi tristique senectus et
+            netus et malesuada. Ipsum dolor sit amet consectetur adipiscing elit
+            pellentesque habitant morbi.
+          </p>
+          <img
+            class="about_us_1"
+            src="./assets/UX-HTML-CSS/Vase_Dame_2048x2048.jpg"
+            alt="Vase with flowers."
+          />
+          <p>
+            Ornare quam viverra orci sagittis. Eu augue ut lectus arcu bibendum
+            at varius vel. Eget mi proin sed libero enim. Quam viverra orci
+            sagittis eu volutpat odio facilisis. Amet nulla facilisi morbi
+            tempus iaculis urna id. Sit amet tellus cras adipiscing enim.
+            Adipiscing tristique risus nec feugiat in.
+          </p>
+          <p>
+            Dui vivamus arcu felis bibendum ut tristique. Ornare arcu dui
+            vivamus arcu felis bibendum ut tristique et. Gravida rutrum quisque
+            non tellus orci ac auctor augue. Mauris ultrices eros in cursus.
+            Euismod in pellentesque massa placerat duis ultricies lacus sed
+            turpis.
+          </p>
+          <img
+            class="about_us_2"
+            src="./assets/UX-HTML-CSS/Cylinder_unglazed3_2048x2048.jpg"
+            alt="Vase with flowers."
+          />
+        </div>
+      </section>
+      <section class="our_products">
+        <h2>Our Products</h2>
+        <div class="product_pictures">
+            <div class="product_1">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-7HuTGlUfQSo-unsplash.jpg"
+                alt="Bowls"
+                />
+            </div>
+            <div class="product_2">
+                <img
+                src="./assets/UX-HTML-CSS/oriento-maVIpNNtmlQ-unsplash.jpg"
+                alt="Vase"
+                />
+            </div>
+            <div class="product_3">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-bgIO-u4GEfI-unsplash.jpg"
+                alt="Bowls"
+                />
+            </div>
+            <div class="product_4">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-3uwu5K0RtaE-unsplash.jpg"
+                alt="Bowls"
+                />
+            </div>
+            <div class="product_5">
+                <img
+                src="./assets/UX-HTML-CSS/linh-le-a0rE64YJDA4-unsplash.jpg"
+                alt="Vase with flowers"
+                />
+            </div>
+            <div class="product_6">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-oiZAQvxTcYQ-unsplash.jpg"
+                alt="Pots"
+                />
+            </div>
+            <div class="product_7">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-YA2E3d7a9Wo-unsplash.jpg"
+                alt="Bowls"
+                />
+            </div>
+            <div class="product_8">
+                <img
+                src="./assets/UX-HTML-CSS/oriento-l0ah3UBLppo-unsplash.jpg"
+                alt="Vase"
+                />
+            </div>
+            <div class="product_9">
+                <img
+                src="./assets/UX-HTML-CSS/tom-crew-SITGdvztUdg-unsplash.jpg"
+                alt="Bowls"
+                />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ContactUs">
+        <h2>Contact Us</h2>
+        <hr />
+        <p>Email</p>
+        <p>Message</p>
+        <p>Send</p>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="./assets/UX-HTML-CSS/icons8-youtube-96.png"
+        alt="YouTube Icon"
+      />
+      <img
+        src="./assets/UX-HTML-CSS/icons8-facebook-96 (1).png"
+        alt="FaceBook Icon"
+      />
+      <a href="./index.html"
+        >Cara
+        <img
+          src="./assets/UX-HTML-CSS/icons8-pottery-96.png"
+          alt="Image of vase logo."
+        />
+        Cara</a
+      >
+      <img
+        src="./assets/UX-HTML-CSS/icons8-twitter-96.png"
+        alt="Twitter Icon"
+      />
+      <img
+        src="./assets/UX-HTML-CSS/icons8-instagram-96.png"
+        alt="InstaGram Icon"
+      />
+      <p>This is some random text.</p>
+      <p>This is more random text.</p>
+      <p>&copy; Copyright 2015 - 2020</p>
+    </footer>
+  </body>
 </html>

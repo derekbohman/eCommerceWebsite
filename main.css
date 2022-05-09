@@ -1,11 +1,118 @@
-header{
-
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-body{
-
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-footer{
+header {
+  position: relative;
+}
 
+header div img {
+  size: 10%;
+}
+
+.main_content {
+  padding: 7%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid black 3px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+/* .header_section {} */
+
+.header_section ul li {
+  font-family: sans-serif;
+  font-size: 11px;
+  display: inline-block;
+}
+
+.header_section ul {
+  display: flex;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.logo span {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  padding-left: 10px;
+}
+
+.search_bar {
+  background-image: url("./assets/UX-HTML-CSS/1200px-Google_Magnifying_Glass.svg.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.cart {
+  font-size: 11px;
+  font-family: sans-serif;
+  margin-left: 30px;
+}
+
+header div {
+  text-align: center;
+}
+
+header form {
+  text-align: right;
+}
+
+.about_us_1 {
+    float: left;
+    height: 200px;
+}
+
+.about_us_2 {
+    height: 300px;
+    display: flex;
+}
+
+.about_content {
+    display: flex;
+}
+
+.product_pictures {
+    display: flex;
 }

@@ -12,7 +12,7 @@ html {
 }
 
 header {
-  position: relative;
+
 }
 
 header div img {
@@ -114,5 +114,14 @@ header form {
 }
 
 .product_pictures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_us {
+
+}
+
+.footer_container {
     display: flex;
 }

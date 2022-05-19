@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  font-family: sans-serif;
 }
 
 header {
@@ -39,7 +40,7 @@ nav li {
 .header_container {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid black 3px;
+  border-bottom: 3px solid black;
   margin-left: 7%;
   margin-right: 7%;
   margin-bottom: 15px;
@@ -100,39 +101,85 @@ header form {
 }
 
 .about_us_1 {
-    float: left;
-    height: 200px;
+  float: left;
+  height: 15rem;
+  padding-top: 1rem;
+  padding-right: 4rem;
 }
 
 .about_us_2 {
-    height: 300px;
-    display: flex;
+  height: 22rem;
+  position: relative;
+  float: right;
 }
 
 .about_content {
-    display: flex;
 }
-.flex-container{
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: aqua;
-}
-.flex-container > div{
-  width: 50%;
-  margin: 10px;
-  text-align: center;
-  line-height: 100px;
-}
-.product-image {
-  height: 100px;
-  width: 100px;
- 
+
+.product_image {
+  height: 240px;
+  width: 100%;
 }
 
 .contact_us {
 
 }
 
+.our_products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 65px;
+  row-gap: 70px;
+  padding-top: 40px;
+}
+
+.product_name {
+  border-bottom: 2px solid black;
+  padding-right: 5rem;
+  padding-bottom: 0.25rem;
+}
+
+.button {
+float: right;
+}
+
+.price {
+  float: right;
+}
+
+.learn {
+  color: hsl(29, 74%, 45%);
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid hsl(29, 74%, 45%);
+}
+
+.product_container button {
+  color: white;
+  background-color: hsl(29, 74%, 45%);
+  font-size: 12px;
+}
+
 .footer_container {
-    display: flex;
+  display: flex;
+  background-color: hsl(29, 74%, 45%);
+  border: none;
+}
+
+.product_container {
+
+}
+
+.social_media {
+
+}
+
+h2 {
+  border-bottom: 3px solid black;
+  width: 60%;
+  padding-top: 2rem;
+}
+
+.about_content p {
+  width: 60%;
 }

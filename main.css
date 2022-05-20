@@ -8,12 +8,11 @@
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  /* font-size: 100%; */
   font-family: sans-serif;
 }
 
 header {
-
 }
 
 header div img {
@@ -46,8 +45,6 @@ nav li {
   margin-bottom: 15px;
   align-items: center;
 }
-
-/* .header_section {} */
 
 .header_section ul li {
   font-family: sans-serif;
@@ -122,7 +119,6 @@ header form {
 }
 
 .contact_us {
-
 }
 
 .our_products {
@@ -139,8 +135,13 @@ header form {
   padding-bottom: 0.25rem;
 }
 
-.button {
-float: right;
+.product_button button {
+  float: right;
+  text-decoration: none;
+  background-color: hsl(29, 74%, 45%);
+  color: white;
+  cursor: pointer;
+  border: none;
 }
 
 .price {
@@ -154,24 +155,40 @@ float: right;
   border-bottom: 1px solid hsl(29, 74%, 45%);
 }
 
-.product_container button {
+.send_button button {
+  text-decoration: none;
+  background-color: hsl(29, 74%, 45%);
   color: white;
-  background-color: hsl(29, 74%, 45%);
-  font-size: 12px;
-}
-
-.footer_container {
-  display: flex;
-  background-color: hsl(29, 74%, 45%);
+  cursor: pointer;
   border: none;
+  margin-left: 44rem;
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
-.product_container {
-
+.email_text {
+  padding-bottom: 0.3rem;
+  padding-left: 8rem;
 }
 
-.social_media {
+.email_input {
+  padding-left: 8rem;
+  padding-bottom: 1rem;
+}
 
+.message_text {
+  columns: 50;
+  padding-left: 8rem;
+  padding-bottom: 0.3rem;
+}
+
+.message_input {
+  padding-left: 8rem;
+}
+
+.message_textbox {
+  resize: none;
 }
 
 h2 {
@@ -182,4 +199,33 @@ h2 {
 
 .about_content p {
   width: 60%;
+}
+
+.footer_container {
+  background-color: hsl(29, 74%, 45%);
+  display: flex;
+}
+
+.social_media_1,
+.social_media_2,
+.social_media_3,
+.social_media_4 {
+  height: 3rem;
+  align-self: center;
+}
+
+.text_1 {
+
+}
+
+.bottom_logo {
+  height: 4rem;
+}
+
+.footer_images {
+
+}
+
+.footer_text {
+
 }
